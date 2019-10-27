@@ -32,6 +32,9 @@ if ( sizeof($request_array['events']) > 0 )
 	  	else if(($text== "ทำไมอ่านแล้วไม่ตอบ")||($text== "อ่านไม่ตอบ")||($text== "หยิ่งหรอ")||($text== "ไม่ตอบ")){
 			$reply_message = '5555';
 		}
+	   	else if(($text== "แล้วไง")||($text== "เจอได้")||($text== "นก")||($text== "แหม")){
+			$reply_message = 'อิอิ จะเอาป่ะล่ะ';
+		}
 		else
 		{
 			$reply_message = 'ระบบได้รับข้อความ ('.$text.') ของคุณแล้ว';
