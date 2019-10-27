@@ -35,6 +35,9 @@ if ( sizeof($request_array['events']) > 0 )
 	   	else if(($text== "แล้วไง")||($text== "เจอได้")||($text== "นก")||($text== "แหม")){
 			$reply_message = 'อิอิ จะเอาป่ะล่ะ';
 		}
+	   else if(($text== "หัวล้าน")||($text== "ไอ้สัส")||($text== "สัส")||($text== "จ้า")){
+			$reply_message = 'ขอบคุณจ้า';
+		}
 		else
 		{
 			$reply_message = 'ระบบได้รับข้อความ ('.$text.') ของคุณแล้ว';
