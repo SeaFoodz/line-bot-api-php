@@ -50,6 +50,9 @@ if ( sizeof($request_array['events']) > 0 )
 	   else if(($text== "อ่อน")||($text== "เตี้ย")||($text== "นางฟ้า")||($text== "มีแฟนยัง")||($text== "เกรี้ยวกราด")){
 			$reply_message = 'จะหมัดจะมวยได้หมด';
 		 }
+	    else if(($text== "ขาวไหม")||($text== "โง่")||($text== "จะเอาอ่อ")||($text== "อะไรของมึง")||($text== "จ่ะ")){
+			$reply_message = 'ไม่รู้ ไม่ชี้ จะนอน หัดพูดอยู่ อย่ารีบมาก ทำเองเลยไหม';
+		 }
 		else
 		{
 			$reply_message = 'รอก่อน หัดพูดอยู่เว้ยเห้ย อย่าใจร้อน';
@@ -57,7 +60,7 @@ if ( sizeof($request_array['events']) > 0 )
    
    }
    else
-    $reply_message = 'ระบบได้รับ '.ucfirst($event['message']['type']).' ของคุณแล้ว';
+    $reply_message = 'ใจจ่ะ ขอเอาไปนอนฝันก่อนนะ '.ucfirst($event['message']['type']).' ของคุณแล้ว';
   
   }
   else
