@@ -23,11 +23,11 @@ if ( sizeof($request_array['events']) > 0 )
 		$text = $event['message']['text'];
 		
 		if(($text == "อุณหภูมิตอนนี้")||($text == "อุณหภูมิวันนี้")||($text == "อุณหภูมิ")){
-			$temp = 27;
+			$temp = 33;
 			$reply_message = 'ขณะนี้อุณหภูมิที่ '.$temp.'°C องศาเซลเซียส';
 		}
 		else if(($text== "ตอนนี้อยู่ที่ไหน")||($text== "ตอนนี้อยู่ไหน")||($text== "อยู่ที่ไหน")||($text== "อยู่ไหน")){
-			$reply_message = 'ขณะนี้อยู่ที่โรงไฟฟ้าบางปะกง!!';
+			$reply_message = 'ขณะนี้อยู่ที่บ้าน!';
 		}
 	  	else if(($text== "ทำไมอ่านแล้วไม่ตอบ")||($text== "อ่านไม่ตอบ")||($text== "หยิ่งหรอ")||($text== "ไม่ตอบ")){
 			$reply_message = '5555';
@@ -35,12 +35,16 @@ if ( sizeof($request_array['events']) > 0 )
 	   	else if(($text== "แล้วไง")||($text== "เจอได้")||($text== "นก")||($text== "แหม")){
 			$reply_message = 'อิอิ จะเอาป่ะล่ะ';
 		}
-	   else if(($text== "หัวล้าน")||($text== "ไอ้สัส")||($text== "สัส")||($text== "จ้า")){
+	   	else if(($text== "หัวล้าน")||($text== "ไอ้สัส")||($text== "สัส")||($text== "จ้า")){
 			$reply_message = 'ขอบคุณจ้า';
 		}
+	   else if(($text== "ทำไร")||($text== "ทำไรอยู่")||($text== "ปราง")||($text== "ไอสัส")){
+			$reply_message = 'ยุ่งไร';
+		   else if(($text== "กินข้าว")||($text== "กินไร")||($text== "กินไหม")||($text== "กิน")){
+			$reply_message = 'ไม่เอา อ้วน';
 		else
 		{
-			$reply_message = 'ใจเย็นนะไอ้หนู เฮียกำลังหัดเดิน เคป้ะ';
+			$reply_message = 'รอก่อน หัดพูดอยู่เว้ยเห้ย อย่าใจร้อน';
     		}
    
    }
