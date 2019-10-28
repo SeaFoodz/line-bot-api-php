@@ -44,6 +44,9 @@ if ( sizeof($request_array['events']) > 0 )
 		 else if(($text== "กินข้าว")||($text== "กินไร")||($text== "กินไหม")||($text== "กิน")){
 			$reply_message = 'ไม่เอา อ้วน';
 		 }
+	    	else if(($text== "ดี")||($text== "สวัสดี")||($text== "ไง")||($text== "ดีจ้า")||($text== "สวัสดีจ้า")){
+			$reply_message = 'ดี มีไร';
+		 }
 		else
 		{
 			$reply_message = 'รอก่อน หัดพูดอยู่เว้ยเห้ย อย่าใจร้อน';
