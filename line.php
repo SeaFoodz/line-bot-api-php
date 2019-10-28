@@ -38,10 +38,12 @@ if ( sizeof($request_array['events']) > 0 )
 	   	else if(($text== "หัวล้าน")||($text== "ไอ้สัส")||($text== "สัส")||($text== "จ้า")){
 			$reply_message = 'ขอบคุณจ้า';
 		}
-	   else if(($text== "ทำไร")||($text== "ทำไรอยู่")||($text== "ปราง")||($text== "ไอสัส")){
+	   	else if(($text== "ทำไร")||($text== "ทำไรอยู่")||($text== "ปราง")||($text== "ไอสัส")){
 			$reply_message = 'ยุ่งไร';
-		   else if(($text== "กินข้าว")||($text== "กินไร")||($text== "กินไหม")||($text== "กิน")){
+		}
+		 else if(($text== "กินข้าว")||($text== "กินไร")||($text== "กินไหม")||($text== "กิน")){
 			$reply_message = 'ไม่เอา อ้วน';
+		 }
 		else
 		{
 			$reply_message = 'รอก่อน หัดพูดอยู่เว้ยเห้ย อย่าใจร้อน';
