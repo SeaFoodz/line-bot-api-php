@@ -27,7 +27,7 @@ if ( sizeof($request_array['events']) > 0 )
 			$reply_message = 'ขณะนี้อุณหภูมิที่ '.$temp.'°C องศาเซลเซียส';
 		}
 		else if(($text== "ตอนนี้อยู่ที่ไหน")||($text== "ตอนนี้อยู่ไหน")||($text== "อยู่ที่ไหน")||($text== "อยู่ไหน")){
-			$reply_message = 'ขณะนี้อยู่ที่บ้าน!';
+			$reply_message = 'อยู่ไหนก็ได้โตแล้ว!';
 		}
 	  	else if(($text== "ทำไมอ่านแล้วไม่ตอบ")||($text== "อ่านไม่ตอบ")||($text== "หยิ่งหรอ")||($text== "ไม่ตอบ")){
 			$reply_message = '5555';
@@ -46,6 +46,9 @@ if ( sizeof($request_array['events']) > 0 )
 		 }
 	    	else if(($text== "ดี")||($text== "สวัสดี")||($text== "ไง")||($text== "ดีจ้า")||($text== "สวัสดีจ้า")){
 			$reply_message = 'ดี มีไร';
+		 }
+	   else if(($text== "อ่อน")||($text== "เตี้ย")||($text== "นางฟ้า")||($text== "มีแฟนยัง")||($text== "เกรี้ยวกราด")){
+			$reply_message = 'จะหมัดจะมวยได้หมด';
 		 }
 		else
 		{
